@@ -1,0 +1,1 @@
+cp $HOME/.bash_profile .
