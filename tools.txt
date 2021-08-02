@@ -2,3 +2,4 @@ vim
 git
 htop
 silversearcher-ag
+terminator

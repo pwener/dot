@@ -16,6 +16,9 @@ export PS1='\[\e[0;1;97m\]\u\[\e[0m\]@\[\e[0;38;5;246m\]\H\[\e[0m\]#\[\e[0;38;5;
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push origin'
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+alias gd='git diff origin/master -- '
+alias gaa='git add --all'
 
 # CONFIG
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
