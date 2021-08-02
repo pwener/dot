@@ -1,0 +1,4 @@
+vim
+git
+htop
+silversearcher-ag
