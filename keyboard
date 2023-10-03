@@ -1,0 +1,12 @@
+# KEYBOARD CONFIGURATION FILE
+
+# In linux: /etc/default/keyboard
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="abnt2"
+XKBLAYOUT="br"
+XKBVARIANT=""
+XKBOPTIONS=""
+
+BACKSPACE="guess"

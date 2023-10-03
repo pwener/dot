@@ -30,7 +30,7 @@ export CLOUDSDK_PYTHON='/usr/bin/python3'
 export LD_LIBRARY_PATH=/usr/local/lib
 
 # CONFIDENTIAL
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/Documentos/secret/cerc2-book-stg-01-7f491d4a32b7.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/pwener/.config/gcloud/application_default_credentials.json"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/google/google-cloud-sdk/path.bash.inc' ]; then . '/opt/google/google-cloud-sdk/path.bash.inc'; fi
