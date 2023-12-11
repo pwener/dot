@@ -1,4 +1,6 @@
-sudo apt-get install build-essential dirmngr gpg curl gawk
+#!/bin/bash
+
+apt-get install build-essential dirmngr gpg curl gawk
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 
