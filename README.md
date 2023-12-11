@@ -1,5 +1,19 @@
-# my bash
+# Dot files
 
-- `bashapply.sh` setup bash_profile
-- `versioning.sh` pull system bash_profile to git project
-- `install-tools.sh` install my favorite dev tools
+### Setup bash_profile
+
+```sh
+./bashapply.sh
+```
+
+### Versioning bash_profile
+
+```sh
+./versioning.sh
+```
+
+### Install dev tools
+
+```sh
+./install-tools.sh
+```

@@ -21,19 +21,7 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gd='git diff origin/master -- '
 alias gaa='git add --all'
 
-# CONFIG
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# LOAD asdf
+. $HOME/.asdf/asdf.sh
 
-# FIX
-export CLOUDSDK_PYTHON='/usr/bin/python3'
-export LD_LIBRARY_PATH=/usr/local/lib
-
-# CONFIDENTIAL
-export GOOGLE_APPLICATION_CREDENTIALS="/home/pwener/.config/gcloud/application_default_credentials.json"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/opt/google/google-cloud-sdk/path.bash.inc' ]; then . '/opt/google/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/opt/google/google-cloud-sdk/completion.bash.inc' ]; then . '/opt/google/google-cloud-sdk/completion.bash.inc'; fi
+. $HOME/.asdf/completions/asdf.bash
