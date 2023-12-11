@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Phelipe Wener
+	email = phwener@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[web]
+	browser = google-chrome
