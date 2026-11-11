@@ -9,3 +9,10 @@ asdf plugin add golang
 
 asdf install nodejs latest
 asdf install golang latest
+
+asdf plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
+
+asdf list all lazydocker
+asdf install lazydocker latest
+asdf global lazydocker latest
+
