@@ -1,6 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
+on_error() {
+  local status=$?
+  echo "Install failed at line ${BASH_LINENO[0]}: ${BASH_COMMAND} (exit ${status})" >&2
+  exit "$status"
+}
+trap on_error ERR
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TOOLS_FILE="${SCRIPT_DIR}/tools.txt"
 
@@ -55,3 +62,5 @@ asdf plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
 asdf list all lazydocker
 asdf install lazydocker latest
 asdf global lazydocker latest
+
+echo "Tools installed successfully."
