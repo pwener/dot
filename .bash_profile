@@ -16,10 +16,10 @@ alias docker-prune='docker system prune -a && docker rmi $(docker images -a -q)'
 # GIT
 alias gs='git status'
 alias gc='git commit'
-alias gp='git push origin'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias gd='git diff origin/master -- '
 alias gaa='git add --all'
+alias gpo='git push origin $(git symbolic-ref --short HEAD)'
 
 # LOAD asdf
 . $HOME/.asdf/asdf.sh
